@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script type="text/javascript" src="FileSaver.js"></script>
+    <script src="book.html"></script>
+    <script src="form.js"></script>
+    <script src="save.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/b76793c698.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+</head>
+<body>
+    <div id="informações">
+        <input type="text" id="inputNome" placeholder="Nome Completo">
+        <input type="submit" id="sendNome" value="Enviar Nome">
+        <input type="text" id="inputPalavrasChaves" placeholder="Palavras Chaves">
+        <input type="submit" id="sendPalavrasChaves" value="Enviar Palavras Chaves">
+        <input type="text" id="inputLinkedIn" placeholder="Link LinkedIn">
+        <input type="submit" id="sendLinkedIn" value="Enviar link LinkedIn">
+        <input type="number" id="inputTelefone" placeholder="Telefone">
+        <input type="submit" id="sendTelefone" value="Enviar Telefone">
+        <input type="text" id="inputEmail" placeholder="Link e-mail">
+        <input type="submit" id="sendEmail" value="Enviar link e-mail">
+        <input type="text" id="inputEndereço" placeholder="Endereço Completo">
+        <input type="submit" id="sendEndereço" value="Enviar Endereço">
+        <select id="selectEstadoCivil">
+            <option>Solteiro,</option>
+            <option>Casado,</option>
+            <option>Divorciado,</option>
+            <option>Viúvo,</option>
+        </select>
+        <input type="submit" id="sendEstadoCivil" value="Enviar Estado Civil">
+        <input type="text" id="inputIdade" placeholder="Idade">
+        <input type="submit" id="sendIdade" value="Enviar Idade">
+        <textarea name="textApresentação" id="textoApresentação" cols="30" rows="10" placeholder="Texto de Apresentação"></textarea>
+        <input type="submit" id="sendApresentação" value="Enviar Texto da Apresentação">
+    </div !--informações>
+    <div class="book">
+        <div class="page">
+            <div class="subpage">
+                <div class="cabeçario">
+                    <div class="cabeçario-left">
+                        <p id="NomeCompleto">Nome Completo</p>
+                        <p id="PalavrasChaves">Palavras Chaves</p>
+                        <i class="fa-brands fa-linkedin" id="iconLinkedin"></i><p id="LinkedIn">LinkedIn</p><br>
+                        <i class="fa-solid fa-mobile-screen" id="iconTelefone"></i><p id="Telefone">Telefone</p>
+                        <i class="fa-solid fa-at" id="iconEmail"></i><p id="Email">e-mail</p><br>
+                        <i class="fa-solid fa-location-dot" id="iconEndereço"></i><p id="Endereço">Endereço Completo</p><br>
+                        <i class="fa-solid fa-info" id="iconInfos"></i><p id="EstadoCivil">Estado Civil</p>
+                        <p id="Idade">Idade</p><p id="Idade">anos.</p>
+                        <br>
+                        <br>
+                        <script class="scriptCabeçario-left">
+                            const campoNome = document.querySelector("#sendNome");
+                            campoNome.addEventListener("click", function(e) {
+                                e.preventDefault();
+                                const fullName = document.querySelector("#inputNome");
+                                const newFullName = fullName.value;
+                                document.getElementById("NomeCompleto").innerHTML= newFullName;
+                            });
+                            const campoPalavrasChaves = document.querySelector("#sendPalavrasChaves");
+                            campoPalavrasChaves.addEventListener("click", function(e) {
+                                e.preventDefault();
+                                const fullPalavrasChaves = document.querySelector("#inputPalavrasChaves");
+                                const newPalavrasChaves = fullPalavrasChaves.value;
+                                document.getElementById("PalavrasChaves").innerHTML = newPalavrasChaves;
+                            });
+                            const campoLinkedIn = document.querySelector("#sendLinkedIn");
+                            campoLinkedIn.addEventListener("click", function(e) {
+                                e.preventDefault();
+                                const fullLinkedIn = document.querySelector("#inputLinkedIn");
+                                const newLinkedIn = fullLinkedIn.value;
+                                document.getElementById("LinkedIn").innerHTML = newLinkedIn;
+                            });
+                            const campoTelefone = document.querySelector("#sendTelefone");
+                            campoTelefone.addEventListener("click", function(e) {
+                                e.preventDefault();
+                                const fullTelefone = document.querySelector("#inputTelefone");
+                                const newTelefone = fullTelefone.value;
+                                document.getElementById("Telefone").innerHTML = newTelefone;
+                            });
+                            const campoEmail = document.querySelector("#sendEmail");
+                            campoEmail.addEventListener("click", function(e) {
+                                e.preventDefault();
+                                const fullEmail = document.querySelector("#inputEmail");
+                                const newEmail = fullEmail.value;
+                                document.getElementById("Email").innerHTML = newEmail;
+                            });
+                            const campoEndereco = document.querySelector("#sendEndereço");
+                            campoEndereco.addEventListener("click", function(e) {
+                                e.preventDefault();
+                                const fullEndereco = document.querySelector("#inputEndereço");
+                                const newFullEndereco = fullEndereco.value;
+                                document.getElementById("Endereço").innerHTML= newFullEndereco;
+                            });
+                            const campoEstadoCivil = document.querySelector("#sendEstadoCivil");
+                            campoEstadoCivil.addEventListener("click", function(e) {
+                                e.preventDefault();
+                                const fullEstadoCivil = document.querySelector("#selectEstadoCivil");
+                                const newFullEstadoCivil = fullEstadoCivil.value;
+                                document.getElementById("EstadoCivil").innerHTML= newFullEstadoCivil;
+                            });
+                            const campoIdade = document.querySelector("#sendIdade");
+                            campoIdade.addEventListener("click", function(e) {
+                                e.preventDefault();
+                                const fullIdade = document.querySelector("#inputIdade");
+                                const newFullIdade = fullIdade.value;
+                                document.getElementById("Idade").innerHTML= newFullIdade;
+                            });
+		                </script>
+                    </div !--cabeçario-left>
+                    <div class="cabeçario-right">
+                        <img src="jackson0101.jpg" class="cabeçario-right-image" alt="Foto do Currículo">
+                    </div !--cabeçario-right>
+                </div !--cabeçario>
+                <div class="divApresentação">
+                    <p id="Apresentação">Sua Apresentação irá aparecer aqui</p>
+                    <script>
+                        const campoApresentacao = document.querySelector("#sendApresentação");
+                        campoApresentacao.addEventListener("click", function(e) {
+                            e.preventDefault();
+                            const fullApresentacao = document.querySelector("#textoApresentação");
+                            const newFullApresentacao = fullApresentacao.value;
+                            document.getElementById("Apresentação").innerHTML= newFullApresentacao;
+                        });
+                    </script>
+                </div !--divApresentação>
+                <div class="divPrincipaisCompetencias">
+                    <i class="fa-solid fa-rectangle-list" id="iconCompetencias"></i><p id="principaisCompetencias">Principais Competências</p>
+                </div !--divPrincipaisCompetencias>
+                <hr class="hr">
+                <div class="divFormação">
+                    <i class="fa-solid fa-graduation-cap" id="iconFormação"></i><p id="formação">Formação</p>
+                </div !--divFormação>
+                <hr class="hr">
+                <div class="divFormaçãoComplementar">
+                    <i class="fa-solid fa-award" id="iconFormaçãoComplementar"></i><p id="formaçãoComplementar">Formação Complementar</p>
+                </div !--divFormaçãoComplementar>
+                <hr class="hr">
+                <div class="divExperiênciaProfissional">
+                    <i class="fa-solid fa-briefcase" id="iconExperiênciaProfissional"></i><p id="experiênciaProfissional">Experiência Profissional</p>
+                </div !--divExperiênciaProfissional>
+                <hr class="hr">
+                <div class="divIdiomaValores">
+                    <div class="divIdiomas">
+                        <i class="fa-solid fa-earth-americas" id="iconIdiomas"></i><p id="idiomas">Idiomas</p>
+                    </div !--divIdiomas>
+                    <div class="divValores">
+                        <i class="fa-solid fa-circle-plus" id="iconValores"></i><p id="valores">Valores</p>
+                    </div !--divValores>
+                </div !--divIdiomaValores>
+                <div class="divhrs">
+                    <hr class="hr2" id="hrA">
+                    <hr class="hr2" id="hrB">
+                </div !--divhrs>
+                <div class="divPrêmioseTítulos">
+                    <i class="fa-solid fa-medal" id="iconPrêmioseTítulos"></i><p id="prêmioseTítulos">Prêmios e Títulos</p>
+                </div !--divPrêmioseTítulos>
+                <hr class="hr">
+            </div !--subpage>
+        </div !--page>
+        <div class="page">
+            <div class="subpage">
+                <h1>Página 02</h1>
+            </div !--subpage>
+        </div !--page>
+    </div !--book>
+</body>
+</html>

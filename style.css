@@ -1,0 +1,481 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 25mm;
+    background-color: #ffff;
+    font: 12pt "Georgia";
+    display: block;
+}
+.hr {
+    border: 0;
+    border-top: medium double blue;
+    height: 0px;
+    overflow: visible;
+    padding: 0;
+    color: blue;
+    text-align: center;
+}
+.hr2 {
+    border: 0;
+    border-top: medium double blue;
+    height: 0px;
+    overflow: visible;
+    padding: 3px;
+    color: blue;
+    text-align: center;
+    width: 45%;
+    margin-top: 3px;
+	margin-bottom: 0;
+}
+#informações {
+    position:fixed;
+    top: 1%;
+    right: 1%;
+    width: 300px;
+    height: 620px;
+    border: 1px solid #000;
+    padding: 10px;
+    overflow-y:scroll;
+}
+input {
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px solid #CCC;
+    text-indent: 4px;
+}
+input::placeholder{
+    text-align: center;
+}
+
+#textoApresentação {
+    width: 100%;
+    height: 200px;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px solid #CCC;
+    text-indent: 4px;
+    word-wrap:break-word;
+}
+#textoApresentação::placeholder {
+    text-align: center;
+}
+select {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px solid #CCC;
+    padding-left: 100px;
+}
+
+.cabeçario-left{
+    display: block;
+}
+#NomeCompleto {
+    font-size: x-large;
+    color: blue;
+    text-align: left;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+}
+#PalavrasChaves {
+    font-size: larger;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    display: block;
+    width: 60%;
+
+}
+#iconLinkedin {
+    display: inline;
+    color: blue;
+}
+#LinkedIn {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    display: inline;
+    width: 60%;
+    margin-left: 8px;
+
+
+}
+#iconTelefone {
+    display: inline;
+    color: blue;
+}
+#Telefone {
+    font-size: medium;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    width: 20%;
+    display: inline;
+    margin-left: 8px;
+}
+#iconEmail {
+    display: inline;
+    color: blue;
+    margin-left: 10px;
+
+}
+#Email {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 5px;
+    display: inline;
+    width: 40%;
+
+}
+#iconEndereço {
+    display: inline;
+    color: blue;
+}
+#Endereço {
+    font-size: medium;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 08px;
+    display: inline;
+    width: 60%;
+
+}
+#iconInfos {
+    display: inline;
+    color: blue;
+    margin-left: 3px;
+}
+#EstadoCivil {
+    font-size: medium;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 11px;
+    margin-right: 0;
+    display: inline;
+    width: 60%;
+
+}
+#Idade {
+    font-size: medium;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 3px;
+    display: inline;
+    width: 60%;
+
+}
+#Apresentação {
+    text-align: justify;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.book {
+    display:block;
+}
+.page {
+    position:relative;
+    float:left;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 10mm;
+    margin: 10mm auto;
+    border: 1px #ffff;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.subpage {
+    padding: 1cm;
+    border: 5px #ffff;
+    height: 257mm;
+    outline: 2cm #ffff;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;        
+    }
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+.cabeçario{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+
+}
+.cabeçario-left{
+    width: 80%;
+    height: 20vh;
+}
+.cabeçario-right{
+    width: 20%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cabeçario-right-image{
+    width: 100%;
+}
+.divApresentação {
+    font-size:smaller;
+    display: flex;
+    float: left;
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+    hyphens: auto;
+    margin-top: 30px;
+	margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.divPrincipaisCompetencias {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+    display: flex;
+    width: 100%;
+}
+#iconCompetencias{
+    display: inline;
+    color: blue;
+    margin-left: -8px;
+    margin-top: 5px;
+}
+#principaisCompetencias{
+    font-size: x-large;
+    color: blue;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+}
+.divFormação {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 8px;
+    display: flex;
+    width: 100%;
+}
+#iconFormação{
+    display: inline;
+    color: blue;
+    margin-left: -8px;
+    margin-top: 5px;
+}
+#formação{
+    font-size: x-large;
+    color: blue;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+}
+.divFormaçãoComplementar {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 16px;
+    display: flex;
+    width: 100%;
+}
+#iconFormaçãoComplementar{
+    display: inline;
+    color: blue;
+    margin-left: -12px;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+#formaçãoComplementar{
+    font-size: x-large;
+    color: blue;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+}
+.divExperiênciaProfissional {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+    display: flex;
+    width: 100%;
+}
+#iconExperiênciaProfissional {
+    display: inline;
+    color: blue;
+    margin-left: -8px;
+    margin-right: 2px;
+    margin-top: 5px;
+}
+#experiênciaProfissional {
+    font-size: x-large;
+    color: blue;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+}
+.divhrs{
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 0px;
+    display: flex;
+    width: 100%;
+}
+#hrA{
+    margin-left: 0;
+}
+#hrB{
+    margin-right: 0;
+}
+.divIdiomaValores{
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 0px;
+    display: flex;
+    width: 100%;
+}
+.divIdiomas {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+    display: flex;
+    width: 50%;
+}
+#iconIdiomas {
+    display: inline;
+    color: blue;
+    margin-left: -7px;
+    margin-right: 1px;
+    margin-top: 5px;
+}
+#idiomas {
+    font-size: x-large;
+    color: blue;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+}
+.divValores {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+    display: flex;
+    width: 50%;
+}
+#iconValores {
+    display: inline;
+    color: blue;
+    margin-left: 23px;
+    margin-top: 5px;
+}
+#valores {
+    font-size: x-large;
+    color: blue;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+}
+.divPrêmioseTítulos {
+    font-size: medium;
+    color: blue;
+    text-align: left;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 12px;
+    display: flex;
+    width: 100%;
+}
+#iconPrêmioseTítulos {
+    display: inline;
+    color: blue;
+    margin-left: -8px;
+    margin-right: 1px;
+    margin-top: 5px;
+}
+#prêmioseTítulos {
+    font-size: x-large;
+    color: blue;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+	margin-bottom: 0;
+    margin-left: 10px;
+}
