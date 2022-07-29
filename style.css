@@ -202,7 +202,7 @@ button {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-.book {
+#book {
     display:block;
 }
 .page {
@@ -229,6 +229,25 @@ button {
     margin: 0;
 }
 @media print {
+    html , body * {
+        visibility: hidden;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    #imprimir, #imprimir * {
+        visibility: visible;
+    }
+    #imprimir {
+        position:static;
+        margin-top: -100px;
+        margin-bottom: 200px;
+        margin-left: -95px;
+        top: 0px;
+        left: 0;  
+        page-break-after: auto;
+    
+    }
+
     html, body {
         width: 210mm;
         height: 297mm;        
