@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/b76793c698.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -12,8 +13,15 @@
 
 <body class="A4" >
     <div id="informações" >
-        <input type="text" id="inputNome" placeholder="Nome Completo">
-        <input type="submit" id="sendNome" value="Enviar Nome">
+        <div class="conteudo">
+            <div class="topo">
+                <input type="text" id="inputnovoNome" placeholder="Adicione uma novo nome">
+                <button id="btnAddNome"><i class="fa fa-plus"></i></button>
+            </div>
+    
+            <ul id="listaNomes">
+            </ul>
+        </div> 
         <input type="text" id="inputPalavrasChaves" placeholder="Palavras Chaves">
         <input type="submit" id="sendPalavrasChaves" value="Enviar Palavras Chaves">
         <input type="text" id="inputLinkedIn" placeholder="Link LinkedIn">
@@ -35,7 +43,7 @@
         <input type="submit" id="sendIdade" value="Enviar Idade">
         <textarea name="textApresentação" id="textoApresentação" cols="30" rows="10" placeholder="Texto de Apresentação"></textarea>
         <input type="submit" id="sendApresentação" value="Enviar Texto da Apresentação">
-
+        
     </div !--informações>
     <section class="sheet padding-15mm" id="imprimir" >
         <div class="cabeçario">
@@ -44,20 +52,15 @@
                 <p id="PalavrasChaves">Palavras Chaves</p>
                 <i class="fa-brands fa-linkedin" id="iconLinkedin"></i><p id="LinkedIn">LinkedIn</p><br>
                 <i class="fa-solid fa-mobile-screen" id="iconTelefone"></i><p id="Telefone">Telefone</p>
-                <i class="fa-solid fa-at" id="iconEmail"></i><p id="Email">e-mail</p><br>
+                <i class="fa-solid fa-at" id="iconEmail" ></i><p id="Email">e-mail</p><br>
                 <i class="fa-solid fa-location-dot" id="iconEndereço"></i><p id="Endereço">Endereço Completo</p><br>
                 <i class="fa-solid fa-info" id="iconInfos"></i><p id="EstadoCivil">Estado Civil</p>
                 <p id="Idade">Idade</p><p id="Idade">anos.</p>
                 <br>
                 <br>
                 <script class="scriptCabeçario-left">
-                    const campoNome = document.querySelector("#sendNome");
-                    campoNome.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        const fullName = document.querySelector("#inputNome");
-                        const newFullName = fullName.value;
-                        document.getElementById("NomeCompleto").innerHTML= newFullName;
-                    });
+
+
                     const campoPalavrasChaves = document.querySelector("#sendPalavrasChaves");
                     campoPalavrasChaves.addEventListener("click", function(e) {
                         e.preventDefault();
@@ -114,7 +117,7 @@
             </div !--cabeçario-right>
         </div !--cabeçario>
         <div class="divApresentação" >
-            <p id="Apresentação">Sua Apresentação irá aparecer aqui</p>
+            <p id="Apresentação" >Sua Apresentação irá aparecer aqui</p>
             <script>
                 const campoApresentacao = document.querySelector("#sendApresentação");
                 campoApresentacao.addEventListener("click", function(e) {
@@ -142,8 +145,8 @@
         </div !--divExperiênciaProfissional>
         <hr class="hr">
         <div class="divIdiomaValores">
-            <div class="divIdiomas">
-                <i class="fa-solid fa-earth-americas" id="iconIdiomas"></i><p id="idiomas">Idiomas</p>
+            <div class="divIdiomas" >
+                <i class="fa-solid fa-earth-americas" id="iconIdiomas" ></i><p id="idiomas">Idiomas</p>
             </div !--divIdiomas>
             <div class="divValores">
                 <i class="fa-solid fa-circle-plus" id="iconValores"></i><p id="valores">Valores</p>
@@ -158,6 +161,24 @@
         </div !--divPrêmioseTítulos>
         <hr class="hr">
     </section>
+    <div id="janelaEdicao">
+        <button id="janelaEdicaoBtnFechar">
+            <i class="fa fa-remove fa-2x"></i>
+        </button>
+        <h2 id="idnomecompletoEdicao">#1021</h2>
+        <hr>
+        <form>
+            <div class="frm-linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="inputnomecompletoNomeEdicao">
+            </div>
+            <div class="frm-linha">
+                <button id="btnAtualizarnomecompleto">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <div id="janelaEdicaoFundo"></div>
+    <script src="tarefas.js"></script>
 </body>
 
 </html>
