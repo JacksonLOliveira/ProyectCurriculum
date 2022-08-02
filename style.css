@@ -632,19 +632,18 @@ button {
 
 }
 .divPCompLeft, .divFormacaoLeft, .divFCLeft, .divExpProfLeft, .divPremTitLeft {
-    display: flex;
+    display: inline-block;
     width: 20%;
-    border-right: 3px solid black;
     text-align: right;
-    margin-right: 10px;
-    padding-right: 10px;
     font-weight: bold;
-    height: 80%;
 } 
 
 .divPCompRight, .divFormacaoRight, .divFCRight, .divExpProfRight, .divPremTitRight {
-    display: flex;
+    display: inline-block;
     width: 80%;
+    border-left: 3px solid black;
+    margin-left: 10px;
+    padding-left: 10px;
 }
 .infosLeftValoresIdiomas{
     display:inline;
@@ -760,20 +759,20 @@ form {
     background: #3c3a3a;
 } 
 
-.comp1, .comp2, .comp3 {
+.comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4 {
     display: flex;
 }
-.inputisPC {
+.inputisPC, .inputisForm {
     width: 80%;
     display: inline;
     margin-right: 5px;
 };
-.BottoesPC {
+.BottoesPC, .BottoesForm {
     width: 20%;
     display: inline;
 }
-.Enviar1comp, .Enviar2comp, .Enviar3comp {
-    height: 90%;
+.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform {
+    height: 95%;
     width: 130%;
     padding: 0;
 }
