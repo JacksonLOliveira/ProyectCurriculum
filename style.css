@@ -9,16 +9,17 @@ body {
 }
 .hr {
     border: 0;
-    border-top: medium double blue;
+    border-top: medium double black;
     height: 0px;
     overflow: visible;
     padding: 0;
     color: blue;
     text-align: center;
+    margin-bottom: 3px;
 }
 .hr2 {
     border: 0;
-    border-top: medium double blue;
+    border-top: medium double black;
     height: 0px;
     overflow: visible;
     padding: 3px;
@@ -32,7 +33,7 @@ body {
     position:fixed;
     top: 1%;
     right: 1%;
-    width: 350px;
+    width: 450px;
     height: 620px;
     border: 1px solid #fff;
     padding: 10px;
@@ -232,8 +233,18 @@ button {
 @media print {
     html , body * {
         visibility: hidden;
-        margin-top: 1%;
-        margin-bottom: 1%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
     }
     .noprint, #noprint {
         display: none;
@@ -251,11 +262,11 @@ button {
         page-break-after: auto;
     
     }
-    #Apresentação {
+     #Apresentação {
         text-align: justify;
-        width: 100%;
-        margin-top: -120px;
+        margin-top: -100px;
     }
+    
     .cabeçario-left{
         display:flow-root;
         position:relative;
@@ -267,21 +278,7 @@ button {
         margin-top: -100px;
         margin-left: -10px;
     }
-
-    html, body {
-        width: 210mm;
-        height: 297mm;        
-    }
-    .page {
-        margin: 0;
-        border: initial;
-        border-radius: initial;
-        width: initial;
-        min-height: initial;
-        box-shadow: initial;
-        background: initial;
-        page-break-after: always;
-    }
+   
 }
 .cabeçario{
     display: flex;
@@ -313,15 +310,15 @@ button {
     word-wrap: break-word;
     hyphens: auto;
     margin-top: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
     margin-left: 0px;
 }
 
-.divPrincipaisCompetencias {
+.divPrincipaisCompetencias, .divFormação, .divFormaçãoComplementar, .divExperiênciaProfissional, .divIdiomaValores, .divPrêmioseTítulos {
     font-size: medium;
     color: blue;
     text-align: left;
-    margin-top: 0;
+    margin-top: 10px;
 	margin-bottom: 0;
     margin-left: 10px;
     display: flex;
@@ -342,16 +339,7 @@ button {
 	margin-bottom: 0;
     margin-left: 10px;
 }
-.divFormação {
-    font-size: medium;
-    color: blue;
-    text-align: left;
-    margin-top: 0;
-	margin-bottom: 0;
-    margin-left: 8px;
-    display: flex;
-    width: 100%;
-}
+
 #iconFormação{
     display: inline;
     color: blue;
@@ -367,20 +355,11 @@ button {
 	margin-bottom: 0;
     margin-left: 10px;
 }
-.divFormaçãoComplementar {
-    font-size: medium;
-    color: blue;
-    text-align: left;
-    margin-top: 0;
-	margin-bottom: 0;
-    margin-left: 16px;
-    display: flex;
-    width: 100%;
-}
+
 #iconFormaçãoComplementar{
     display: inline;
     color: blue;
-    margin-left: -12px;
+    margin-left: -05px;
     margin-right: 3px;
     margin-top: 5px;
 }
@@ -393,16 +372,7 @@ button {
 	margin-bottom: 0;
     margin-left: 10px;
 }
-.divExperiênciaProfissional {
-    font-size: medium;
-    color: blue;
-    text-align: left;
-    margin-top: 0;
-	margin-bottom: 0;
-    margin-left: 10px;
-    display: flex;
-    width: 100%;
-}
+
 #iconExperiênciaProfissional {
     display: inline;
     color: blue;
@@ -433,14 +403,7 @@ button {
 #hrB{
     margin-right: 0;
 }
-.divIdiomaValores{
-    text-align: left;
-    margin-top: 0;
-	margin-bottom: 0;
-    margin-left: 0px;
-    display: flex;
-    width: 100%;
-}
+
 .divIdiomas {
     font-size: medium;
     color: blue;
@@ -451,10 +414,23 @@ button {
     display: flex;
     width: 50%;
 }
+.divIdiomasValores{
+    display: flex;
+}
+.divIdiomasTopo {
+    color: black;
+    display: flex;
+    width: 50%;
+}
+.divValoresTopo {
+    color: black;
+    display: flex;
+    width: 50%;
+}
 #iconIdiomas {
     display: inline;
     color: blue;
-    margin-left: -7px;
+    margin-left: -20px;
     margin-right: 1px;
     margin-top: 5px;
 }
@@ -465,7 +441,7 @@ button {
     height: auto;
     margin-top: 0;
 	margin-bottom: 0;
-    margin-left: 10px;
+    margin-left: 13px;
 }
 .divValores {
     font-size: medium;
@@ -480,7 +456,7 @@ button {
 #iconValores {
     display: inline;
     color: blue;
-    margin-left: 23px;
+    margin-left: 15px;
     margin-top: 5px;
 }
 #valores {
@@ -490,17 +466,7 @@ button {
     height: auto;
     margin-top: 0;
 	margin-bottom: 0;
-    margin-left: 10px;
-}
-.divPrêmioseTítulos {
-    font-size: medium;
-    color: blue;
-    text-align: left;
-    margin-top: 0;
-	margin-bottom: 0;
-    margin-left: 12px;
-    display: flex;
-    width: 100%;
+    margin-left: 13px;
 }
 #iconPrêmioseTítulos {
     display: inline;
@@ -524,7 +490,7 @@ button {
 
 
 
-.conteudo {
+.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao {
     margin: 0 auto;
     width: 100%;;
     max-width: 400px;
@@ -535,14 +501,21 @@ button {
     border-radius: 12px;
 }
 
-.topo {
+.topo, .topoPrincipaisCompetências {
    display: flex;
    justify-content: space-between;
    margin: 0 auto;
-   margin-bottom: 12px;     
+   margin-bottom: 12px; 
+} 
+
+.divPCompTopo, .divFormacaoTopo, .divFCTopo, .divExpProfTopo, .divPremTitilosTopo {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   margin-bottom: 0px;   
 }
 
-.topo input {
+.topo input, .topoPrincipaisCompetências input {
     width: 85%;
     padding: 15px;
     border-radius: 12px;
@@ -552,8 +525,27 @@ button {
     background: #191818;
     color: #FFF;
 }
+.títulosAreasCurriculoFormu, .títulosAreasFormacao {
+    width: 100%;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #b4b8b5;
+}
 
-.topo button {
+#inputnovaCompetencia {
+    margin-right: 5px;
+}
+
+#inputAreaCompetencia {
+    width: 30%;
+    margin-right: 05px;
+}
+
+.topo button, .topoPrincipaisCompetências button {
     width: 35px;
     border-radius: 12px;
     border: 1px solid #191818;
@@ -562,18 +554,18 @@ button {
     outline: none;
 }
 
-.topo button:hover {
+.topo button:hover, .topoPrincipaisCompetências button:hover {
     background: #1f1e1e;
     cursor: pointer;
 }
 
-#listaNomes, #listaPalavrasChaves {
+#listaNomes, #listaPCompetencias {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-#listaNomes li, #listaPalavrasChaves li {
+#listaNomes li {
     padding: 10px;
     background: #191818;
     border-radius: 12px;
@@ -601,7 +593,7 @@ button {
 }
 
 .textonomecompleto, .textopalavraschaves {
-    color: #FFF;
+    color: #b4b8b5;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 50%;
@@ -620,6 +612,77 @@ button {
     border-radius: 12px;
     z-index: 200;
     display: none;
+}
+.divValoresLeft, .divIdiomasLeft {
+    display: flex;
+    width: 20%;
+    text-align: right;
+    margin-right: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+.divValoresRight, .divIdiomasRight {
+    display: flex;
+    width: 80%;
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+.divPCompLeft, .divFormacaoLeft, .divFCLeft, .divExpProfLeft, .divPremTitLeft {
+    display: flex;
+    width: 20%;
+    border-right: 3px solid black;
+    text-align: right;
+    margin-right: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    height: 80%;
+} 
+
+.divPCompRight, .divFormacaoRight, .divFCRight, .divExpProfRight, .divPremTitRight {
+    display: flex;
+    width: 80%;
+}
+.infosLeftValoresIdiomas{
+    display:inline;
+    width: 80%;
+    justify-content: right;
+    margin: 0 auto;
+    font-size: 12px;
+
+}
+.infosLeft {
+    display:flex;
+    width: 100%;
+    text-align: right;
+    justify-content: right;
+    margin-right: 10px;
+    padding: 0px;
+    margin: 0%;
+    font-size: 12px;
+    margin-bottom: 0%;
+}
+.infosRightValoresIdiomas{
+    display:inline;
+    width: 20%;
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 12px;
+
+}
+.infosRight {
+    display:flex;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    padding: 1px;
+    margin: 0%;
+    font-size: 12px;
+
 }
 
 #janelaEdicao.abrir {
@@ -696,3 +759,21 @@ form {
 .frm-linha button:hover {
     background: #3c3a3a;
 } 
+
+.comp1, .comp2, .comp3 {
+    display: flex;
+}
+.inputisPC {
+    width: 80%;
+    display: inline;
+    margin-right: 5px;
+};
+.BottoesPC {
+    width: 20%;
+    display: inline;
+}
+.Enviar1comp, .Enviar2comp, .Enviar3comp {
+    height: 90%;
+    width: 130%;
+    padding: 0;
+}

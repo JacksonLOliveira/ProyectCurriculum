@@ -1,53 +1,42 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/b76793c698.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
+
 </head>
 
-<body class="A4" >
-    <div id="informações" >
-        <div class="conteudo">
-            <div class="topo">
-                <input type="text" id="inputnovoNome" placeholder="Adicione uma novo nome">
-                <button id="btnAddNome"><i class="fa fa-plus"></i></button>
-            </div>
+<body class="A4">
+   
+    <div id="FormularioExternoInformações">
+        <script type="text/javascript">
+
+            $(function()
+            {
+                $("#FormularioExternoInformações").load("formulario.html");
+            });
+            
+        </script>
+    </div>
+
     
-            <ul id="listaNomes">
-            </ul>
-        </div> 
-        <input type="text" id="inputPalavrasChaves" placeholder="Palavras Chaves">
-        <input type="submit" id="sendPalavrasChaves" value="Enviar Palavras Chaves">
-        <input type="text" id="inputLinkedIn" placeholder="Link LinkedIn">
-        <input type="submit" id="sendLinkedIn" value="Enviar link LinkedIn">
-        <input type="number" id="inputTelefone" placeholder="Telefone">
-        <input type="submit" id="sendTelefone" value="Enviar Telefone">
-        <input type="text" id="inputEmail" placeholder="Link e-mail">
-        <input type="submit" id="sendEmail" value="Enviar link e-mail">
-        <input type="text" id="inputEndereço" placeholder="Endereço Completo">
-        <input type="submit" id="sendEndereço" value="Enviar Endereço">
-        <select id="selectEstadoCivil">
-            <option>Solteiro,</option>
-            <option>Casado,</option>
-            <option>Divorciado,</option>
-            <option>Viúvo,</option>
-        </select>
-        <input type="submit" id="sendEstadoCivil" value="Enviar Estado Civil">
-        <input type="text" id="inputIdade" placeholder="Idade">
-        <input type="submit" id="sendIdade" value="Enviar Idade">
-        <textarea name="textApresentação" id="textoApresentação" cols="30" rows="10" placeholder="Texto de Apresentação"></textarea>
-        <input type="submit" id="sendApresentação" value="Enviar Texto da Apresentação">
-        
-    </div !--informações>
+
     <section class="sheet padding-15mm" id="imprimir" >
+
         <div class="cabeçario">
+
             <div class="cabeçario-left">
+
                 <p id="NomeCompleto">Nome Completo</p>
                 <p id="PalavrasChaves">Palavras Chaves</p>
                 <i class="fa-brands fa-linkedin" id="iconLinkedin"></i><p id="LinkedIn">LinkedIn</p><br>
@@ -56,94 +45,128 @@
                 <i class="fa-solid fa-location-dot" id="iconEndereço"></i><p id="Endereço">Endereço Completo</p><br>
                 <i class="fa-solid fa-info" id="iconInfos"></i><p id="EstadoCivil">Estado Civil</p>
                 <p id="Idade">Idade</p><p id="Idade">anos.</p>
+
                 <br>
                 <br>
-                <script class="scriptCabeçario-left">
 
-
-                    const campoPalavrasChaves = document.querySelector("#sendPalavrasChaves");
-                    campoPalavrasChaves.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        const fullPalavrasChaves = document.querySelector("#inputPalavrasChaves");
-                        const newPalavrasChaves = fullPalavrasChaves.value;
-                        document.getElementById("PalavrasChaves").innerHTML = newPalavrasChaves;
-                    });
-                    const campoLinkedIn = document.querySelector("#sendLinkedIn");
-                    campoLinkedIn.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        const fullLinkedIn = document.querySelector("#inputLinkedIn");
-                        const newLinkedIn = fullLinkedIn.value;
-                        document.getElementById("LinkedIn").innerHTML = newLinkedIn;
-                    });
-                    const campoTelefone = document.querySelector("#sendTelefone");
-                    campoTelefone.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        const fullTelefone = document.querySelector("#inputTelefone");
-                        const newTelefone = fullTelefone.value;
-                        document.getElementById("Telefone").innerHTML = newTelefone;
-                    });
-                    const campoEmail = document.querySelector("#sendEmail");
-                    campoEmail.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        const fullEmail = document.querySelector("#inputEmail");
-                        const newEmail = fullEmail.value;
-                        document.getElementById("Email").innerHTML = newEmail;
-                    });
-                    const campoEndereco = document.querySelector("#sendEndereço");
-                    campoEndereco.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        const fullEndereco = document.querySelector("#inputEndereço");
-                        const newFullEndereco = fullEndereco.value;
-                        document.getElementById("Endereço").innerHTML= newFullEndereco;
-                    });
-                    const campoEstadoCivil = document.querySelector("#sendEstadoCivil");
-                    campoEstadoCivil.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        const fullEstadoCivil = document.querySelector("#selectEstadoCivil");
-                        const newFullEstadoCivil = fullEstadoCivil.value;
-                        document.getElementById("EstadoCivil").innerHTML= newFullEstadoCivil;
-                    });
-                    const campoIdade = document.querySelector("#sendIdade");
-                    campoIdade.addEventListener("click", function(e) {
-                        e.preventDefault();
-                        const fullIdade = document.querySelector("#inputIdade");
-                        const newFullIdade = fullIdade.value;
-                        document.getElementById("Idade").innerHTML= newFullIdade;
-                    });
-                </script>
             </div !--cabeçario-left>
+
+            <script src="nome.js"></script>
+            <script src="formularioParteCinza.js"></script>
+
             <div class="cabeçario-right">
                 <img src="jackson0101.jpg" class="cabeçario-right-image" alt="Foto do Currículo">
             </div !--cabeçario-right>
+
         </div !--cabeçario>
+
         <div class="divApresentação" >
+
             <p id="Apresentação" >Sua Apresentação irá aparecer aqui</p>
-            <script>
-                const campoApresentacao = document.querySelector("#sendApresentação");
-                campoApresentacao.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    const fullApresentacao = document.querySelector("#textoApresentação");
-                    const newFullApresentacao = fullApresentacao.value;
-                    document.getElementById("Apresentação").innerHTML= newFullApresentacao;
-                });
-            </script>
+
+            <script src="apresentacao.js"></script>
+
         </div !--divApresentação>
-        <div class="divPrincipaisCompetencias">
-            <i class="fa-solid fa-rectangle-list" id="iconCompetencias"></i><p id="principaisCompetencias">Principais Competências</p>
-        </div !--divPrincipaisCompetencias>
-        <hr class="hr">
+
+        <div class="PrincipaisCompetencias">
+
+            <div class="divPrincipaisCompetencias">
+
+                <i class="fa-solid fa-rectangle-list" id="iconCompetencias"></i><p id="principaisCompetencias">Principais Competências</p>
+    
+            </div !--divPrincipaisCompetencias>
+    
+            <hr class="hr">
+        
+            <div class="div1Comp">
+    
+                <div class="divPCompTopo">
+                    
+                    <div class="divPCompLeft">
+                        <p id="area1Comp" class="infosLeft">Área</p>
+                    </div>
+                    <div class="divPCompRight">
+                        <p id="desc1comp" class="infosRight">Competências</p>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="div2Comp">
+                <div class="divPCompTopo">
+                    
+                    <div class="divPCompLeft">
+                        <p id="area2Comp" class="infosLeft">Área </p>
+                    </div>
+                    <div class="divPCompRight">
+                        <p id="desc2comp" class="infosRight">Competências</p>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="div3Comp">
+                <div class="divPCompTopo">
+                    
+                    <div class="divPCompLeft">
+                        <p id="area3Comp" class="infosLeft">Área </p>
+                    </div>
+                    <div class="divPCompRight">
+                        <p id="desc3comp" class="infosRight">Competências</p>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <script src="PrincipaisCompetencias.js"></script>
+
+        </div>
+
         <div class="divFormação">
             <i class="fa-solid fa-graduation-cap" id="iconFormação"></i><p id="formação">Formação</p>
         </div !--divFormação>
+
         <hr class="hr">
+
+        <div class="div1form">
+
+            <div class="divFormacaoTopo">
+
+                <div class="divFormacaoLeft">
+                <p id="ano1Form" class="infosLeft">Ano</p>
+                </div>
+                <div class="divFormacaoRight">
+                <p id="infos1Curso" class="infosRight">Informações do Curso</p>
+                </div>
+    
+            </div>
+
+        </div>
+
         <div class="divFormaçãoComplementar">
             <i class="fa-solid fa-award" id="iconFormaçãoComplementar"></i><p id="formaçãoComplementar">Formação Complementar</p>
         </div !--divFormaçãoComplementar>
         <hr class="hr">
+        <div class="divFCTopo">
+            <div class="divFCLeft">
+            <p id="anoFC" class="infosLeft">Ano</p>
+            </div>
+            <div class="divFCRight">
+            <p id="infosFC" class="infosRight">Informaçoes da Formação Complementar</p>
+            </div>
+        </div>
         <div class="divExperiênciaProfissional">
             <i class="fa-solid fa-briefcase" id="iconExperiênciaProfissional"></i><p id="experiênciaProfissional">Experiência Profissional</p>
         </div !--divExperiênciaProfissional>
         <hr class="hr">
+        <div class="divExpProfTopo">
+            <div class="divExpProfLeft">
+            <p id="PeriodoExpProf" class="infosLeft">Ano Entrada <br> Ano Saída</p>
+            </div>
+            <div class="divExpProfRight">
+            <p id="infosCargos" class="infosRight">Informações da Empresa, cargo e função</p>
+            </div>
+        </div>
         <div class="divIdiomaValores">
             <div class="divIdiomas" >
                 <i class="fa-solid fa-earth-americas" id="iconIdiomas" ></i><p id="idiomas">Idiomas</p>
@@ -156,10 +179,36 @@
             <hr class="hr2" id="hrA">
             <hr class="hr2" id="hrB">
         </div !--divhrs>
+        <div class="divIdiomasValores">
+            <div class="divIdiomasTopo">
+                <div class="divIdiomasLeft">
+                <p id="anoPremTitulos" class="infosLeftValoresIdiomas">Idioma</p>
+                </div>
+                <div class="divIdiomasRight">
+                <p id="infosIdiomas" class="infosRightValoresIdiomas">Nível </p>
+                </div>
+            </div>
+            <div class="divValoresTopo">
+                <div class="divValoresLeft">
+                <p id="SimbValores" class="infosLeftValoresIdiomas">></p>
+                </div>
+                <div class="divValoresRight">
+                <p id="infoValores" class="infosRightValoresIdiomas">Valores</p>
+                </div>
+            </div>
+        </div>
         <div class="divPrêmioseTítulos">
             <i class="fa-solid fa-medal" id="iconPrêmioseTítulos"></i><p id="prêmioseTítulos">Prêmios e Títulos</p>
         </div !--divPrêmioseTítulos>
         <hr class="hr">
+        <div class="divPremTitilosTopo">
+            <div class="divPremTitLeft">
+            <p id="anoPremTitulos" class="infosLeft">Ano</p>
+            </div>
+            <div class="divPremTitRight">
+            <p id="infosPremTitulos" class="infosRight">Informações sobre o Prêmio ou Título</p>
+            </div>
+        </div>
     </section>
     <div id="janelaEdicao">
         <button id="janelaEdicaoBtnFechar">
@@ -178,7 +227,10 @@
         </form>
     </div>
     <div id="janelaEdicaoFundo"></div>
-    <script src="tarefas.js"></script>
+
+    <!-- <script src="PrincComp.js"></script> -->
 </body>
+
+
 
 </html>
