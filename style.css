@@ -490,7 +490,7 @@ button {
 
 
 
-.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao {
+.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao, .ConteudoFormacaoComplementar {
     margin: 0 auto;
     width: 100%;;
     max-width: 400px;
@@ -525,7 +525,7 @@ button {
     background: #191818;
     color: #FFF;
 }
-.títulosAreasCurriculoFormu, .títulosAreasFormacao {
+.títulosAreasCurriculoFormu, .títulosAreasFormacao, .títulosAreasFormacaoComplementar {
     width: 100%;
     display:flex;
     text-align:center;
@@ -759,10 +759,10 @@ form {
     background: #3c3a3a;
 } 
 
-.comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4 {
+.comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4, .fC1, .fC2, .fC3, .fC4, .fC5, .fC6, .fC7, .fC8, .fC9, .fC10, .fC11, .fC12, .fC13, .fC14 {
     display: flex;
 }
-.inputisPC, .inputisForm {
+.inputisPC, .inputisForm, .inputisFC {
     width: 80%;
     display: inline;
     margin-right: 5px;
@@ -772,7 +772,7 @@ form {
     display: inline;
 }
 
-.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform {
+.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14 {
     height: 95%;
     width: 130%;
     padding: 0;
