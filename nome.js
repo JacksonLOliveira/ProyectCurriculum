@@ -47,6 +47,8 @@ function adicionarNomeCompleto(nomecompleto){//okay
     listaNomes.appendChild(li);
     inputNome.value = '';
     document.getElementById("NomeCompleto").innerHTML= li.innerText;
+    document.querySelector(".nomefooter1").innerHTML= li.innerText + " - CV";
+    document.querySelector(".nomefooter2").innerHTML= li.innerText + " - CV";
 }
 
 btnAtualizarnomecompleto.addEventListener('click', (e) => { 
@@ -135,6 +137,8 @@ function enviarAtualizacaoNome (){
     if(confirmarAtulizacaoNome){
         let li = document.querySelector('.textonomecompleto');
         document.getElementById("NomeCompleto").innerHTML= li.innerText;
+        document.querySelector(".nomefooter1").innerHTML= li.innerText + " - CV";
+        document.querySelector(".nomefooter2").innerHTML= li.innerText + " - CV";
     }
 }
 

@@ -278,7 +278,16 @@ button {
         margin-top: -100px;
         margin-left: -10px;
     }
-   
+   .footer2{
+    display: flex;
+    position:absolute;
+    bottom: 100px;
+    font-size: small;
+    width: 680px;
+    margin-bottom: -1125px;
+   }
+
+
 }
 .cabeçario{
     display: flex;
@@ -814,6 +823,36 @@ form {
     text-align: justify;
 }
 
+.container1, .container2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.footer2, .footer1{
+    display: flex;
+    position:absolute;
+    bottom: 10px;
+    font-size: small;
+    width: 680px;
+}
+
+.footerLeft{    
+    display: inline-block;
+    width: 33%;
+}
+
+.footerCenter{
+    display: inline-block;
+    width: 34%;
+
+}
+
+.footerRight{
+    display: inline-block;
+    width: 33%;
+
+}
 
 
