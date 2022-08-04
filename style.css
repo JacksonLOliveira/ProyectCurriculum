@@ -498,7 +498,7 @@ button {
 
 
 
-.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao, .ConteudoFormacaoComplementar, .ConteudoExperiencia, .Conteudoidiomas, .ConteudoValores {
+.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao, .ConteudoFormacaoComplementar, .ConteudoExperiencia, .Conteudoidiomas, .ConteudoValores, .ConteudoPremiosTitulos {
     margin: 0 auto;
     width: 100%;;
     max-width: 400px;
@@ -662,7 +662,7 @@ button {
 
 }
 .infosLeft {
-    display:flex;
+    display:inline-block;
     width: 100%;
     text-align: right;
     justify-content: right;
@@ -682,7 +682,7 @@ button {
 
 }
 .infosRight {
-    display:flex;
+    display:inline;
     width: 100%;
     text-align:justify;
     margin-left: 10px;
@@ -767,7 +767,7 @@ form {
     background: #3c3a3a;
 } 
 
-.comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4, .fC1, .fC2, .fC3, .fC4, .fC5, .fC6, .fC7, .fC8, .fC9, .fC10, .fC11, .fC12, .fC13, .fC14, .ExP1, .ExP2, .ExP3, .ExP4 {
+.comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4, .fC1, .fC2, .fC3, .fC4, .fC5, .fC6, .fC7, .fC8, .fC9, .fC10, .fC11, .fC12, .fC13, .fC14, .ExP1, .ExP2, .ExP3, .ExP4, .PT1, .PT2 {
     display: flex;
 }
 .inputisPC, .inputisForm, .inputisFC, .inputisExP {
@@ -780,7 +780,7 @@ form {
     display: inline;
 }
 
-.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4, .EnviarIdioma1, .EnviarIdioma2, .EnviarIdioma3, .EnviarValores {
+.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4, .EnviarIdioma1, .EnviarIdioma2, .EnviarIdioma3, .EnviarValores, .EnviarPT1, .EnviarPT2 {
     height: 95%;
     width: 130%;
     padding: 0;
