@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 25mm;
     background-color: #ffff;
-    font: 12pt "Georgia";
+    font: 12pt "Verdana";
     display: block;
 }
 .hr {
@@ -13,7 +13,7 @@ body {
     height: 0px;
     overflow: visible;
     padding: 0;
-    color: blue;
+    color: #2a52be;
     text-align: center;
     margin-bottom: 3px;
 }
@@ -23,7 +23,7 @@ body {
     height: 0px;
     overflow: visible;
     padding: 3px;
-    color: blue;
+    color: #2a52be;
     text-align: center;
     width: 45%;
     margin-top: 3px;
@@ -82,7 +82,7 @@ select {
 }
 #NomeCompleto {
     font-size: x-large;
-    color: blue;
+    color: #2a52be;
     text-align: left;
     border-radius: 4px;
     margin-top: 5px;
@@ -92,7 +92,7 @@ select {
 }
 #PalavrasChaves {
     font-size:medium;
-    color: blue;
+    color: #2a52be;
     text-align: left;
     margin-top: 0;
 	margin-bottom: 0;
@@ -102,11 +102,11 @@ select {
 }
 #iconLinkedin {
     display: inline;
-    color: blue;
+    color: #2a52be;
 }
 #LinkedIn {
     font-size: medium;
-    color: blue;
+    color: #2a52be;
     text-align: left;
     margin-top: 0;
 	margin-bottom: 0;
@@ -118,7 +118,7 @@ select {
 }
 #iconTelefone {
     display: inline;
-    color: blue;
+    color: #2a52be;
 }
 #Telefone {
     font-size: medium;
@@ -131,13 +131,13 @@ select {
 }
 #iconEmail {
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: 10px;
 
 }
 #Email {
     font-size: medium;
-    color: blue;
+    color: #2a52be;
     text-align: left;
     margin-top: 0;
 	margin-bottom: 0;
@@ -148,7 +148,7 @@ select {
 }
 #iconEndereço {
     display: inline;
-    color: blue;
+    color: #2a52be;
 }
 #Endereço {
     font-size: medium;
@@ -162,7 +162,7 @@ select {
 }
 #iconInfos {
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: 3px;
 }
 #EstadoCivil {
@@ -275,7 +275,7 @@ button {
     .cabeçario-right-image{
         display:flow-root;
         position:relative;
-        margin-top: -100px;
+        margin-top: -70px;
         margin-left: -10px;
     }
    .footer2{
@@ -325,7 +325,7 @@ button {
 
 .divPrincipaisCompetencias, .divFormação, .divFormaçãoComplementar, .divExperiênciaProfissional, .divIdiomaValores, .divPrêmioseTítulos {
     font-size: medium;
-    color: blue;
+    color: #2a52be;
     text-align: left;
     margin-top: 10px;
 	margin-bottom: 0;
@@ -335,13 +335,13 @@ button {
 }
 #iconCompetencias{
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: -8px;
     margin-top: 5px;
 }
 #principaisCompetencias{
     font-size: x-large;
-    color: blue;
+    color: #2a52be;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -351,13 +351,13 @@ button {
 
 #iconFormação{
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: -8px;
     margin-top: 5px;
 }
 #formação{
     font-size: x-large;
-    color: blue;
+    color: #2a52be;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -367,14 +367,14 @@ button {
 
 #iconFormaçãoComplementar{
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: -05px;
     margin-right: 3px;
     margin-top: 5px;
 }
 #formaçãoComplementar{
     font-size: x-large;
-    color: blue;
+    color: #2a52be;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -384,14 +384,14 @@ button {
 
 #iconExperiênciaProfissional {
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: -8px;
     margin-right: 2px;
     margin-top: 5px;
 }
 #experiênciaProfissional {
     font-size: x-large;
-    color: blue;
+    color: #2a52be;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -415,7 +415,7 @@ button {
 
 .divIdiomas {
     font-size: medium;
-    color: blue;
+    color: #2a52be;
     text-align: left;
     margin-top: 0;
 	margin-bottom: 0;
@@ -446,14 +446,14 @@ button {
 }
 #iconIdiomas {
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: -20px;
     margin-right: 1px;
     margin-top: 5px;
 }
 #idiomas {
     font-size: x-large;
-    color: blue;
+    color: #2a52be;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -462,7 +462,7 @@ button {
 }
 .divValores {
     font-size: medium;
-    color: blue;
+    color: #2a52be;
     text-align: left;
     margin-top: 0;
 	margin-bottom: 0;
@@ -472,13 +472,13 @@ button {
 }
 #iconValores {
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: 15px;
     margin-top: 5px;
 }
 #valores {
     font-size: x-large;
-    color: blue;
+    color: #2a52be;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -487,14 +487,14 @@ button {
 }
 #iconPrêmioseTítulos {
     display: inline;
-    color: blue;
+    color: #2a52be;
     margin-left: -8px;
     margin-right: 1px;
     margin-top: 5px;
 }
 #prêmioseTítulos {
     font-size: x-large;
-    color: blue;
+    color: #2a52be;
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -658,7 +658,7 @@ button {
 .divPCompRight, .divFormacaoRight, .divFCRight, .divExpProfRight, .divPremTitRight {
     display: inline-block;
     width: 80%;
-    border-left: 3px solid black;
+    border-left: 1px solid black;
     margin-left: 10px;
     padding-left: 10px;
 }
@@ -855,4 +855,8 @@ form {
 
 }
 
+img    {
+    border-radius: 50%;
+    /* border: 3px solid #808080; */
+}
 
