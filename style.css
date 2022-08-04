@@ -414,18 +414,26 @@ button {
     display: flex;
     width: 50%;
 }
-.divIdiomasValores{
+
+.divMasterIidiomaValores {
     display: flex;
+}
+
+.divValoresMaior, .divIdiomasMaior{
+    display: inline;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 15px;
 }
 .divIdiomasTopo {
     color: black;
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 .divValoresTopo {
     color: black;
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 #iconIdiomas {
     display: inline;
@@ -490,7 +498,7 @@ button {
 
 
 
-.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao, .ConteudoFormacaoComplementar, .ConteudoExperiencia {
+.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao, .ConteudoFormacaoComplementar, .ConteudoExperiencia, .Conteudoidiomas {
     margin: 0 auto;
     width: 100%;;
     max-width: 400px;
@@ -615,7 +623,7 @@ button {
 }
 .divValoresLeft, .divIdiomasLeft {
     display: flex;
-    width: 20%;
+    width: 25%;
     text-align: right;
     margin-right: 10px;
     padding-right: 10px;
@@ -625,8 +633,8 @@ button {
 
 }
 .divValoresRight, .divIdiomasRight {
-    display: flex;
-    width: 80%;
+    display: inline-block;
+    width: 75%;
     margin-left: 10px;
     font-size: 15px;
 
@@ -647,7 +655,7 @@ button {
 }
 .infosLeftValoresIdiomas{
     display:inline;
-    width: 80%;
+    width: 100%;
     justify-content: right;
     margin: 0 auto;
     font-size: 12px;
@@ -665,8 +673,8 @@ button {
     margin-bottom: 0%;
 }
 .infosRightValoresIdiomas{
-    display:inline;
-    width: 20%;
+    display:block;
+    width: 100%;
     margin: 0 auto;
     margin-left: 0px;
     margin-right: 0px;
@@ -676,12 +684,12 @@ button {
 .infosRight {
     display:flex;
     width: 100%;
-    text-align: left;
+    text-align:justify;
     margin-left: 10px;
     padding: 1px;
     margin: 0%;
     font-size: 12px;
-
+    hyphens: auto;
 }
 
 #janelaEdicao.abrir {
@@ -772,7 +780,7 @@ form {
     display: inline;
 }
 
-.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4 {
+.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4, .EnviarIdioma1, .EnviarIdioma2, .EnviarIdioma3 {
     height: 95%;
     width: 130%;
     padding: 0;
@@ -781,7 +789,7 @@ form {
 .infosRightnegrito {
     display:flex;
     width: 100%;
-    text-align: left;
+    text-align: justify;
     margin-left: 10px;
     padding: 1px;
     margin: 0%;
@@ -799,4 +807,13 @@ form {
     font-size: 12px;
     text-decoration: underline;
 }
+
+#PChaves1, #PChaves2, #PChaves3, #PChaves4 {
+    font-size: 10px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+
+
 

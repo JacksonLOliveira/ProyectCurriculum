@@ -80,16 +80,11 @@ const send4ExP = document.querySelector(".EnviarExP4");
 
 send4ExP.addEventListener("click", (e) =>{
     e.preventDefault();
-    const fullDataEntrada4 = campoDataEntrada4.value;
-    const fullDataSaida4 = campoDataSaida4.value;
-    const fullEmpresa4 = campoEmpresa4.value;
-    const fullCargo4 = campoCargo4.value;
-    const fulldescCargo4 = campodescCargo4.value;
-    const fullPChaves4 = campoPChaves4.value;
-    document.querySelector("#DataEntrada4").innerHTML = fullDataEntrada4;
-    document.querySelector("#DataSaida4").innerHTML = fullDataSaida4;
-    document.querySelector("#Empresa4").innerHTML = fullEmpresa4;
-    document.querySelector("#Cargo4").innerHTML = fullCargo4;
-    document.querySelector("#descCargo4").innerHTML = fulldescCargo4;
-    document.querySelector("#PChaves4").innerHTML = fullPChaves4;
+
+    document.querySelector("#DataEntrada4").innerHTML = campoDataEntrada4.value;
+    document.querySelector("#DataSaida4").innerHTML = campoDataSaida4.value;
+    document.querySelector("#Empresa4").innerHTML = campoEmpresa4.value;
+    document.querySelector("#Cargo4").innerHTML = campoCargo4.value;
+    document.querySelector("#descCargo4").innerHTML = campodescCargo4.value;
+    document.querySelector("#PChaves4").innerHTML = campoPChaves4.value;
 });
