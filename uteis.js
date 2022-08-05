@@ -42,3 +42,42 @@ window.onload = (e) => {
     })
 
 })()
+
+
+
+
+class MobileNavbar {
+    constructor(mobileMenu, informações) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.informações = document.querySelector(informações);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+
+  
+    handleClick() {
+      this.informações.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    "#informações",
+    
+  );
+  mobileNavbar.init();

@@ -38,7 +38,15 @@ body {
     border: 1px solid #fff;
     padding: 10px;
     overflow-y:scroll;
+    background-color: #23282b;
+    z-index: 1;
 }
+
+#conteinerinfo{
+    padding: 10px;
+
+}
+
 input {
     width: 100%;
     height: 30px;
@@ -195,8 +203,8 @@ select {
 button {
     width: 100%;
     height: 30px;
-    color: #FFF;
-    background-color: #000;
+    /* color: #FFF; */
+    /* background-color: #000; */
     border: none;
     border-radius: 4px;
 }
@@ -513,7 +521,7 @@ button {
     max-width: 400px;
     margin-top: 0px;
     margin-bottom: 10px;
-    background: #2b2a2a;
+    background: #003957;
     padding: 20px;
     border-radius: 12px;
 }
@@ -536,11 +544,11 @@ button {
     width: 85%;
     padding: 15px;
     border-radius: 12px;
-    border: 1px solid #191818;
+    border: 1px solid #fff;
     outline: none;
     font-size: 0.8rem;
-    background: #191818;
-    color: #FFF;
+    background: #fff;
+    color: black;
 }
 .títulosAreasCurriculoFormu, .títulosAreasFormacao, .títulosAreasFormacaoComplementar, .títulosExperienciasProficionais {
     width: 100%;
@@ -565,8 +573,8 @@ button {
 .topo button, .topoPrincipaisCompetências button {
     width: 35px;
     border-radius: 12px;
-    border: 1px solid #191818;
-    background: #191818;
+    border: 1px solid #474a51;
+    background: #474a51;
     color: #FFF;
     outline: none;
 }
@@ -584,7 +592,7 @@ button {
 
 #listaNomes li {
     padding: 10px;
-    background: #191818;
+    background: #808080;
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
@@ -595,12 +603,12 @@ button {
 
 .btnAcao {
     border-radius: 20px;
-    border: 1px solid #191818;
+    border: 1px solid #474a51;
     width: 30px;
     height: 30px;
     margin-right: 8px;
     cursor: pointer;
-    background: #2b2a2a;
+    background: #474a51;
     color: #FFF;
     outline: none;
 }
@@ -610,7 +618,7 @@ button {
 }
 
 .textonomecompleto, .textopalavraschaves {
-    color: #b4b8b5;
+    color: black;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 50%;
@@ -775,23 +783,38 @@ form {
 .frm-linha button:hover {
     background: #3c3a3a;
 } 
+.upload-imagem {
+    display: flex;
+    margin-top: 0;
+}
 
-.comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4, .fC1, .fC2, .fC3, .fC4, .fC5, .fC6, .fC7, .fC8, .fC9, .fC10, .fC11, .fC12, .fC13, .fC14, .ExP1, .ExP2, .ExP3, .ExP4, .PT1, .PT2 {
+ .comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4, .fC1, .fC2, .fC3, .fC4, .fC5, .fC6, .fC7, .fC8, .fC9, .fC10, .fC11, .fC12, .fC13, .fC14, .ExP1, .ExP2, .ExP3, .ExP4, .PT1, .PT2 {
     display: flex;
 }
 .inputisPC, .inputisForm, .inputisFC, .inputisExP {
     width: 80%;
-    display: inline;
+    display: inline-block;
     margin-right: 5px;
 };
+.upload {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+}
+.btnImg {
+    width: 30%;
+    height: 30px;
+    display: inline-block;
+    margin-left: 5px;
+}
 .BottoesPC, .BottoesForm {
     width: 20%;
-    display: inline;
+    display: inline-block;
 }
 
 .Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4, .EnviarVol1, .EnviarVol2, .EnviarIdioma1, .EnviarIdioma2, .EnviarIdioma3, .EnviarValores, .EnviarPT1, .EnviarPT2 {
     height: 95%;
-    width: 130%;
+    width: 100%;
     padding: 0;
 }
 
@@ -860,3 +883,67 @@ img    {
     /* border: 3px solid #808080; */
 }
 
+
+
+
+
+
+
+
+.mobile-menu {
+    display: none;
+    cursor: pointer; 
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #000;
+    margin: 8px;
+    transition: 0.3s; 
+}
+
+@media (max-width: 999px) {
+    
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      height: 100%;
+      display:block;
+      zoom: 0.9;
+      margin-top: 0;
+      margin-left: 0;
+      /* position:relative; */
+    }
+    
+
+    #FormularioExternoInformações{
+        width: 100%;    
+    }
+    #informações {
+      position: absolute;
+      top: 7vh;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      zoom: 1.5;
+    }
+    /* .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    } */
+    .mobile-menu {
+      display: block;
+      margin-top: -65px;
+      margin-left: -65px;
+    }
+}
+#informações.active {
+    transform: translateX(0);
+  }
