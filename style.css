@@ -323,7 +323,7 @@ button {
     margin-left: 0px;
 }
 
-.divPrincipaisCompetencias, .divFormação, .divFormaçãoComplementar, .divExperiênciaProfissional, .divIdiomaValores, .divPrêmioseTítulos {
+.divPrincipaisCompetencias, .divFormação, .divFormaçãoComplementar, .divExperiênciaProfissional, .divIdiomaValores, .divPrêmioseTítulos, .divVoluntariado {
     font-size: medium;
     color: #2a52be;
     text-align: left;
@@ -382,14 +382,14 @@ button {
     margin-left: 10px;
 }
 
-#iconExperiênciaProfissional {
+#iconExperiênciaProfissional, #iconVolunter {
     display: inline;
     color: #2a52be;
     margin-left: -8px;
     margin-right: 2px;
     margin-top: 5px;
 }
-#experiênciaProfissional {
+#experiênciaProfissional, #voluntariado {
     font-size: x-large;
     color: #2a52be;
     width: 100%;
@@ -507,7 +507,7 @@ button {
 
 
 
-.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao, .ConteudoFormacaoComplementar, .ConteudoExperiencia, .Conteudoidiomas, .ConteudoValores, .ConteudoPremiosTitulos {
+.conteudo, .conteudoPrincipaisCompetências, .conteudoFormacao, .ConteudoFormacaoComplementar, .ConteudoExperiencia, .ConteudoVolunter, .Conteudoidiomas, .ConteudoValores, .ConteudoPremiosTitulos {
     margin: 0 auto;
     width: 100%;;
     max-width: 400px;
@@ -632,7 +632,7 @@ button {
 }
 .divValoresLeft, .divIdiomasLeft {
     display: flex;
-    width: 25%;
+    width: 30%;
     text-align: right;
     margin-right: 10px;
     padding-right: 10px;
@@ -643,7 +643,7 @@ button {
 }
 .divValoresRight, .divIdiomasRight {
     display: inline-block;
-    width: 75%;
+    width: 70%;
     margin-left: 10px;
     font-size: 15px;
 
@@ -691,7 +691,7 @@ button {
 
 }
 .infosRight {
-    display:inline;
+    display:inline-block;
     width: 100%;
     text-align:justify;
     margin-left: 10px;
@@ -789,7 +789,7 @@ form {
     display: inline;
 }
 
-.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4, .EnviarIdioma1, .EnviarIdioma2, .EnviarIdioma3, .EnviarValores, .EnviarPT1, .EnviarPT2 {
+.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4, .EnviarVol1, .EnviarVol2, .EnviarIdioma1, .EnviarIdioma2, .EnviarIdioma3, .EnviarValores, .EnviarPT1, .EnviarPT2 {
     height: 95%;
     width: 130%;
     padding: 0;
