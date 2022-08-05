@@ -899,11 +899,29 @@ img    {
     width: 32px;
     height: 2px;
     background: #000;
-    margin: 8px;
+    margin: 10px;
     transition: 0.3s; 
 }
 
-@media (max-width: 999px) {
+/* @media screen and (max-width: 650px) {
+    body {
+        margin-left: -65px;
+    }
+
+    #zoom {
+        zoom: 0.1;
+       
+    }
+} */
+
+@media screen and (max-width: 900px) {
+    #zoom {
+        zoom: 0.8;
+       
+    }
+}
+
+@media screen and (max-width: 1300px) {
     
     body {
       overflow-x: hidden;
