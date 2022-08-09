@@ -56,6 +56,7 @@ input {
     margin-bottom: 5px;
     border: 1px solid #CCC;
     text-indent: 4px;
+    
 }
 input::placeholder{
     text-align: center;
@@ -272,7 +273,7 @@ button {
     }
      #Apresentação {
         text-align: justify;
-        margin-top: -100px;
+        margin-top: -80px;
     }
     
     .cabeçario-left{
@@ -295,8 +296,21 @@ button {
     margin-bottom: -1125px;
    }
 
+   .footer3{
+    display: flex;
+    position:absolute;
+    bottom: 100px;
+    font-size: small;
+    width: 680px;
+    margin-bottom: -2250px;
+   }
 
+   .hr, .hr2 {
+    margin-bottom: 20px;
+    }
 }
+
+
 .cabeçario{
     display: flex;
     flex-direction: row;
@@ -701,12 +715,16 @@ button {
 .infosRight {
     display:inline-block;
     width: 100%;
-    text-align:justify;
+    text-align:left;
     margin-left: 10px;
-    padding: 1px;
     margin: 0%;
     font-size: 12px;
-    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens:manual;
+    text-align: justify;
 }
 
 #janelaEdicao.abrir {
@@ -788,7 +806,7 @@ form {
     margin-top: 0;
 }
 
- .comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4, .fC1, .fC2, .fC3, .fC4, .fC5, .fC6, .fC7, .fC8, .fC9, .fC10, .fC11, .fC12, .fC13, .fC14, .ExP1, .ExP2, .ExP3, .ExP4, .PT1, .PT2 {
+ .comp1, .comp2, .comp3, .formacao1, .formacao2, .formacao3, .formacao4, .fC1, .fC2, .fC3, .fC4, .fC5, .fC6, .fC7, .fC8, .fC9, .fC10, .fC11, .fC12, .fC13, .fC14, .fC15, .fC16, .ExP1, .ExP2, .ExP3, .ExP4, .PT1, .PT2 {
     display: flex;
 }
 .inputisPC, .inputisForm, .inputisFC, .inputisExP {
@@ -812,7 +830,7 @@ form {
     display: inline-block;
 }
 
-.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4, .EnviarVol1, .EnviarVol2, .EnviarIdioma1, .EnviarIdioma2, .EnviarIdioma3, .EnviarValores, .EnviarPT1, .EnviarPT2 {
+.Enviar1comp, .Enviar2comp, .Enviar3comp, .Enviar1cursoform, .Enviar2cursoform, .Enviar3cursoform, .Enviar4cursoform, .EnviarFC1, .EnviarFC2, .EnviarFC3, .EnviarFC4, .EnviarFC5, .EnviarFC6, .EnviarFC7, .EnviarFC8, .EnviarFC9, .EnviarFC10, .EnviarFC11, .EnviarFC12, .EnviarFC13, .EnviarFC14, .EnviarFC15, .EnviarFC16, .EnviarExP1, .EnviarExP2, .EnviarExP3, .EnviarExP4, .EnviarVol1, .EnviarVol2, .EnviarIdioma1, .EnviarIdioma2, .EnviarIdioma3, .EnviarValores, .EnviarPT1, .EnviarPT2 {
     height: 95%;
     width: 100%;
     padding: 0;
@@ -823,7 +841,6 @@ form {
     width: 100%;
     text-align: justify;
     margin-left: 10px;
-    padding: 1px;
     margin: 0%;
     font-size: 12px;
     font-weight: bold;
@@ -846,14 +863,14 @@ form {
     text-align: justify;
 }
 
-.container1, .container2 {
+.container1, .container2, .container3 {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.footer2, .footer1{
+.footer2, .footer1, .footer3 {
     display: flex;
     position:absolute;
     bottom: 10px;

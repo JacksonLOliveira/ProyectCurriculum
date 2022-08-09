@@ -49,6 +49,8 @@ function adicionarNomeCompleto(nomecompleto){//okay
     document.getElementById("NomeCompleto").innerHTML= li.innerText;
     document.querySelector(".nomefooter1").innerHTML= li.innerText + " - CV";
     document.querySelector(".nomefooter2").innerHTML= li.innerText + " - CV";
+    document.querySelector(".nomefooter3").innerHTML= li.innerText + " - CV";
+
 }
 
 btnAtualizarnomecompleto.addEventListener('click', (e) => { 
@@ -139,6 +141,8 @@ function enviarAtualizacaoNome (){
         document.getElementById("NomeCompleto").innerHTML= li.innerText;
         document.querySelector(".nomefooter1").innerHTML= li.innerText + " - CV";
         document.querySelector(".nomefooter2").innerHTML= li.innerText + " - CV";
+        document.querySelector(".nomefooter3").innerHTML= li.innerText + " - CV";
+
     }
 }
 

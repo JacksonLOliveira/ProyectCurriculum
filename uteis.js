@@ -10,6 +10,7 @@ window.onload = (e) => {
 
     document.querySelector(".datafooter1").innerHTML = dataFormatada;
     document.querySelector(".datafooter2").innerHTML = dataFormatada;
+    document.querySelector(".datafooter3").innerHTML = dataFormatada;
 
 };
 

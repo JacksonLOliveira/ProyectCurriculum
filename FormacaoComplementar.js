@@ -165,3 +165,27 @@ send14FC.addEventListener("click", (e) =>{
     document.querySelector("#anoFC14").innerHTML = fullAno14FC;
     document.querySelector("#infosFC14").innerHTML = fullInfos14FC;
 })
+
+const campoAno15FC = document.querySelector(".ano15FC");
+const campoInfos15FC = document.querySelector(".infos15FC");
+const send15FC = document.querySelector(".EnviarFC15");
+
+send15FC.addEventListener("click", (e) =>{
+    e.preventDefault();
+    const fullAno15FC = campoAno15FC.value;
+    const fullInfos15FC = campoInfos15FC.value;
+    document.querySelector("#anoFC15").innerHTML = fullAno15FC;
+    document.querySelector("#infosFC15").innerHTML = fullInfos15FC;
+})
+
+const campoAno16FC = document.querySelector(".ano16FC");
+const campoInfos16FC = document.querySelector(".infos16FC");
+const send16FC = document.querySelector(".EnviarFC16");
+
+send16FC.addEventListener("click", (e) =>{
+    e.preventDefault();
+    const fullAno16FC = campoAno16FC.value;
+    const fullInfos16FC = campoInfos16FC.value;
+    document.querySelector("#anoFC16").innerHTML = fullAno16FC;
+    document.querySelector("#infosFC16").innerHTML = fullInfos16FC;
+})
